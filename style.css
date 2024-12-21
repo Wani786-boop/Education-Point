@@ -1,0 +1,150 @@
+/* General reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light, soft background for a clear look */
+    color: #333; /* Dark gray text for better readability */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header section */
+header.section {
+   background: linear-gradient(45deg, #ffffff, #00f7ff); /* White to neon blue gradient */
+
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-bottom: 2px solid #ddd; /* Soft separation between sections */
+}
+
+.logo-container {
+    margin-bottom: 20px; /* Space between logo and title */
+}
+
+.logo {
+    max-width: 150px; /* Logo size adjustment */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+.neon-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(52, 152, 219, 0.7), 0 0 30px rgba(52, 152, 219, 0.8);
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* Adds a modern touch with spacing */
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid #3498db; /* Soft blue border */
+    color: #3498db;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded edges for a more modern look */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.4);
+}
+
+.neon-button:hover {
+    background-color: #3498db;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(52, 152, 219, 0.7), 0 0 30px rgba(52, 152, 219, 0.8);
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Main section */
+main.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.neon-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 500; /* Slightly lighter text for headings */
+    text-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+.neon-title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #3498db; /* Soft blue text */
+    margin-top: 30px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ffffff; /* White background for contrast */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #777; /* Subtle gray text */
+    border-top: 2px solid #ddd; /* Soft separation for footer */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .neon-title {
+        font-size: 2.8rem;
+    }
+
+    .neon-heading {
+        font-size: 1.5rem;
+    }
+
+    .neon-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .neon-title {
+        font-size: 2.2rem;
+    }
+
+    .neon-heading {
+        font-size: 1.3rem;
+    }
+
+    .neon-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}

@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #0d0d0d;
+    line-height: 1.6;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
+.neon-title {
+    font-size: 4rem;
+    color: #00f5ff;
+    text-shadow: 0 0 5px #00f5ff, 0 0 20px #00f5ff, 0 0 40px #00f5ff;
+}
+.tagline {
+    font-size: 1.5rem;
+    margin: 10px 0 30px;
+    color: #e0e0e0;
+}
+.neon-button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #00f5ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #00f5ff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.neon-button:hover {
+    background-color: #00f5ff;
+    color: #0d0d0d;
+    box-shadow: 0 0 10px #00f5ff, 0 0 30px #00f5ff;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 20px;
+}
+.neon-heading {
+    font-size: 2.5rem;
+    color: #00f5ff;
+    text-shadow: 0 0 10px #00f5ff, 0 0 30px #00f5ff;
+    margin-bottom: 30px;
+}
+.resources {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.resource-card {
+    background: #16213e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00f5ff;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #16213e;
+    color: #fff;
+    box-shadow: 0 0 10px #00f5ff;
+}
+.contact-form button {
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #16213e;
+    box-shadow: 0 -5px 10px #00f5ff;
+    margin-top: 30px;
+}
+
