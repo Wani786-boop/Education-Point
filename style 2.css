@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ff007f, #00FFFF);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .logo {
+    width: 120px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero .title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero .tagline {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ff007f;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px #ff007f, 0 0 24px #00FFFF;
+    cursor: pointer;
+}
+
+.neon-button:hover {
+    background: #00FFFF;
+    color: #ff007f;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #00FFFF, 0 0 30px #ff007f;
+}
+
+/* Main Section */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.neon-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ff007f;
+    text-shadow: 0 0 8px #ff007f, 0 0 16px #00FFFF;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.resource-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.resource-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.resource-card .neon-button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #ff007f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00FFFF;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero .title {
+        font-size: 2.4rem;
+    }
+
+    .hero .tagline {
+        font-size: 1.1rem;
+    }
+
+    .neon-heading {
+        font-size: 2rem;
+    }
+
+    .resources {
+        grid-template-columns: 1fr;
+    }
+}
